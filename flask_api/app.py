@@ -133,3 +133,5 @@ class FlaskAPI(Flask):
                 script_name=self.config["APPLICATION_ROOT"] or "/",
                 url_scheme=self.config["PREFERRED_URL_SCHEME"],
             )
+
+app.run(debug=False,port=5000,host='0.0.0.0')
